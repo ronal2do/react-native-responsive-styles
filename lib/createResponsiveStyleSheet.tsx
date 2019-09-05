@@ -1,10 +1,9 @@
 // @flow
 
 import { StyleSheet } from 'react-native';
-import type { StyleSheet as StyleSheetType } from 'react-native/Libraries/StyleSheet/StyleSheet';
 import isResponsive from './isResponsive';
 
-export default function createResponsiveStyleSheet(styles: {}): StyleSheetType<*> {
+export default function createResponsiveStyleSheet(styles: {}): any {
   const standard = {};
   const responsive = {};
 

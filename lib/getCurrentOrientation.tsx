@@ -1,6 +1,6 @@
 // @flow
 
-import Orientation from 'react-native-orientation-listener';
+import Orientation from 'react-native-orientation-locker';
 
 let _currentOrientation = 'portrait';
 
@@ -16,12 +16,12 @@ Orientation.getOrientation((orientation) => {
   // workaround for API inconsistency
   // https://github.com/walmartlabs/react-native-orientation-listener/issues/10
   if (typeof orientation === 'object' && 'orientation' in orientation) {
-    updateCurrentOrientation(orientation.orientation);
+    updateCurrentOrientation(orientation);
   } else {
     updateCurrentOrientation(orientation);
   }
 });
 
-Orientation.addListener(({ orientation }) => {
+Orientation.addOrientationListener((orientation) => {
   updateCurrentOrientation(orientation);
 });
