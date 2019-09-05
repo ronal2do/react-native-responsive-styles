@@ -14,7 +14,7 @@ const updateCurrentOrientation = (orientation: string): void => {
 
 Orientation.getOrientation((orientation) => {
   // workaround for API inconsistency
-  // https://github.com/walmartlabs/react-native-orientation-listener/issues/10
+  // https://github.com/walmartlabs/react-native-orientation-locker/issues/10
   if (typeof orientation === 'object' && 'orientation' in orientation) {
     updateCurrentOrientation(orientation);
   } else {

@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useState, useEffect, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Orientation, { OrientationType } from 'react-native-orientation-locker';
 
 import getCurrentOrientation from './getCurrentOrientation';

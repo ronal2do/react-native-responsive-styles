@@ -38,7 +38,6 @@ export const TouchableOpacity = wrap(ReactNative.TouchableOpacity)
 export const TouchableWithoutFeedback = wrap(ReactNative.TouchableWithoutFeedback)
 export const View = wrap(ReactNative.View)
 
-
 export const StyleSheet = {
   ...ReactNative.StyleSheet,
 
